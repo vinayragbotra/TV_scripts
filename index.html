@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE Tracker Sync</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="brand-glow"></div>
+            <h1>AE Tracker Sync</h1>
+            <p>Seamlessly bridge cuts to After Effects for quick 3D tracking.</p>
+        </header>
+
+        <main class="content">
+            <div class="status-card">
+                <span class="icon">🚀</span>
+                <p id="status-text">Ready to beam your selected timeline clips.</p>
+            </div>
+
+            <div class="options">
+                <label class="checkbox-container">
+                    <input type="checkbox" id="chk-detailed" checked>
+                    <span class="checkmark"></span>
+                    Detailed Analysis
+                </label>
+            </div>
+
+            <button id="btn-sync" class="btn-primary">
+                <span class="btn-text">Send Selected Clips to AE</span>
+                <span class="loader hidden"></span>
+            </button>
+        </main>
+        
+        <footer class="footer">
+            <p>Built dynamically with CEP</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/CSInterface.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
